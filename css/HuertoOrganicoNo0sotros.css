@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+.ContenedorInfo {
+    color: white;
+    padding: 100px;
+    border: 2px solid white; 
+    border-radius: 10px; 
+}
+h1{
+    text-align: center;
+}
+.contenedorImg {
+    text-align: center;
+}
+
+.contenedorImg img {
+    max-width: 100%;
+    height: auto; 
+    display: inline-block;
+    margin: 0 auto;
+}
+.contenedorImg .img3{
+    width: 190px;
+}
