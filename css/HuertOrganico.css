@@ -1,18 +1,33 @@
-
-body{
+body {
     background-color: black;
 }
-.ContenedorHeader{
-    background-color: rgb(13, 12, 12);
-    padding: 15px;
+
+.ContenedorHeader {
+    position: sticky; /*le cambie en ves de fixed*/
+    top: 0;
+    background-color: rgb(36, 35, 35);
+    padding: 20px;
     text-align: right;
 }
-header, nav, ul, li, a{
+.logo {
+    display: flex;
+    align-items: center;
+    color: gold;
+    font-size: 30px;
+}
+
+header,
+nav,
+ul,
+li,
+a {
+
     margin-left: 20px;
     display: inline;
     color: white;
     text-decoration: none;
 }
+
 /* contenedorImagen*/
 .contenedorImagen {
     position: relative;
@@ -21,37 +36,68 @@ header, nav, ul, li, a{
     padding-left: 100px;
     padding-right: 100px;
 }
-.contenedorImagen img{
+
+.contenedorImagen img {
     width: 100%;
     height: 500px;
     object-fit: cover;
 }
+
 .contenedorImagen h1 {
     font-family: 'Times New Roman', Times, serif;
-    position: absolute; 
-    top: 30%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    text-align: center; 
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
     font-size: 50px;
-    margin: 0; 
-    z-index: 1; 
+    margin: 0;
+    z-index: 1;
 }
-.contenedorImagen p{
+
+.contenedorImagen p {
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
     top: 85%;
     left: 850px;
-    transform:  translate(-50%, -50%);
-    color: gold; 
-    text-align: right; 
+    transform: translate(-50%, -50%);
+    color: gold;
+    text-align: right;
     font-size: 25px;
-    margin: 0; 
+    margin: 0;
     z-index: 1;
 }
+
+/* titulo */
+.titulo {
+    text-align: center;
+    color: gold;
+    font-size: 50px;
+}
+
+/* contenedor de imagenes  */
+.contenedorImganes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contenedor {
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+.contenedor p {
+    text-align: left;
+
+}
+
+
 /* footer */
-footer p{
+footer p {
     color: white;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
